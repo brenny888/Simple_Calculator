@@ -25,6 +25,10 @@ public class Calculator extends Observable {
 		this.notifyObservers();
 	}
 	
+	public void setNumber(double n) {
+		this.number = n;
+	}
+	
 	public String toString() {
 		return String.valueOf(this.number);
 	}
